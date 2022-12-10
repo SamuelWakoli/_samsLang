@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://dart.dev/samples -->
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="Content-Language" content="en_US">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Tag Manager -->
+  <script async="" src="./Language samples _ Dart_files/analytics.js"></script><script async="" src="./Language samples _ Dart_files/gtm.js"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5VSZM5J');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="description" content="Examples of idiomatic Dart with links to larger examples.">
+  <title>Language samples | Dart</title>
+
+  <!-- Favicon / Touch Icons -->
+  <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link rel="icon" sizes="64x64" href="https://dart.dev/assets/shared/dart/icon/64.png">
+  <link href="https://dart.dev/assets/img/touch-icon-iphone.png" rel="apple-touch-icon">
+  <link href="https://dart.dev/assets/img/touch-icon-ipad.png" rel="apple-touch-icon" sizes="152x152">
+  <link href="https://dart.dev/assets/img/touch-icon-iphone-retina.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="https://dart.dev/assets/img/touch-icon-ipad-retina.png" rel="apple-touch-icon" sizes="167x167">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@dart_lang">
+  <meta name="twitter:title" content="Language samples">
+  <meta name="twitter:description" content="Examples of idiomatic Dart with links to larger examples.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Language samples">
+  <meta property="og:description" content="Examples of idiomatic Dart with links to larger examples.">
+  <meta property="og:url" content="https://dart.dev/samples/">
+  
+  <meta property="og:image" content="https://dart.dev/assets/shared/dart-logo-for-shares.png?2">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Language samples _ Dart_files/css2" rel="stylesheet">
+  <link href="./Language samples _ Dart_files/css2(1)" rel="stylesheet">
+  <link href="./Language samples _ Dart_files/css2(2)" rel="stylesheet">
+  <link href="./Language samples _ Dart_files/css2(3)" rel="stylesheet">
+  <link href="./Language samples _ Dart_files/icon" rel="stylesheet">
+  <script src="./Language samples _ Dart_files/all.js" data-auto-replace-svg="nest">
+  </script>
+
+  <link rel="stylesheet" href="./Language samples _ Dart_files/main.css">
+  <script src="./Language samples _ Dart_files/jquery.min.js" integrity="sha384-i61gTtaoovXtAbKjo903+O55Jkn2+RtzHtvNez+yI49HAASvznhe9sZyjaSHTau9" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./Language samples _ Dart_files/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./Language samples _ Dart_files/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./Language samples _ Dart_files/js.cookie.min.js" integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./Language samples _ Dart_files/prettify.js"></script>
+  <script src="./Language samples _ Dart_files/lang-css.js"></script>
+  <script src="./Language samples _ Dart_files/lang-dart.js"></script>
+  <script src="./Language samples _ Dart_files/lang-yaml.js"></script>
+  <script src="./Language samples _ Dart_files/os-tabs.js"></script>
+  <script src="./Language samples _ Dart_files/utilities.js"></script>
+  <script src="./Language samples _ Dart_files/main.js"></script>
+
+  <script>
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-26406144-4', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+ </head>
+
+  <body class="default show_banner">
+    <section id="cookie-notice" class="show">
+  <div class="container">
+    <p>Google uses cookies to deliver its services, to personalize ads, and to 
+      analyze traffic. You can adjust your privacy controls anytime in your 
+      <a href="https://myaccount.google.com/data-and-personalization" target="_blank" rel="noopener" class="no-automatic-external">Google settings</a>. 
+      <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener" class="no-automatic-external">Learn more</a>.
+    </p>
+    <button id="cookie-consent" class="btn btn-primary">Okay</button>
+  </div>
+</section>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VSZM5J"
+ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <header id="page-header" class="site-header">
+  <nav id="mainnav" class="site-header">
+  <div id="menu-toggle"><i class="material-icons">menu</i></div>
+  <a href="https://dart.dev/" class="brand" title="Dart">
+    <img src="./Language samples _ Dart_files/white.svg" alt="Dart">
+  </a>
+  <ul class="navbar">
+    <li>
+      <a href="https://dart.dev/overview" class="nav-link">Overview</a>
+    </li>
+    <li class="mainnav__get-started">
+      <a href="https://dart.dev/guides" class="nav-link
+         active">
+        <span>Docs</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://dart.dev/community" class="nav-link">Community</a>
+    </li>
+    <li>
+      <a href="https://dart.dev/#try-dart" class="nav-link">Try Dart</a>
+    </li>
+    <li>
+      <a href="https://dart.dev/get-dart" class="nav-link">Get Dart</a>
+    </li>
+    <li class="searchfield">
+      <form action="https://dart.dev/search" class="site-header__search form-inline" id="cse-search-box">
+        <input type="hidden" name="cx" value="011220921317074318178:_yy-tmb5t_i">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input type="hidden" name="hl" value="en">
+        <input class="site-header__searchfield form-control search-field" type="search" name="q" id="q" autocomplete="off" placeholder="Search" aria-label="Search">
+      </form>
+    </li>
+  </ul>
+</nav>
+
+  
+</header>
+ <div class="banner">
+  <p class="banner__text">
+    Dart 2.18 is available now with Objective-C &amp; Swift interoperability and improvements to networking, type inference, and async code performance. <a href="https://medium.com/@mit.mit/dart-2-18-f4b3101f146c" class="external">Learn more</a><br>
+    The Flutter and Dart teams are hiring.
+    <a href="https://docs.flutter.dev/jobs" class="external">Learn more</a>
+  </p>
+</div> 
+
+    <div id="sidenav" class="" style="top: 122px; max-height: 557px;">
+  <form action="https://dart.dev/search/" class="site-header__search form-inline">
+    <input class="site-header__searchfield form-control search-field" type="search" name="q" id="q" autocomplete="off" placeholder="Search" aria-label="Search">
+  </form>
+
+  <div class="site-sidebar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="https://dart.dev/overview" class="nav-link">Overview</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dart.dev/community" class="nav-link">Community</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dartpad.dev/" class="nav-link external">Try Dart</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dart.dev/get-dart" class="nav-link">Get Dart</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://dart.dev/guides" class="nav-link active">Docs</a>
+      </li>
+    </ul>
+
+    <ul class="nav flex-column"><li class="nav-item">
+      <a class="nav-link active" data-toggle="collapse" href="https://dart.dev/samples#sidenav-1" role="button" aria-expanded="true" aria-controls="sidenav-1">Samples &amp; tutorials</a>
+
+      <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-1">
+        <li class="nav-item">
+    <a class="nav-link active" href="https://dart.dev/samples">Language samples</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-1-2" href="https://dart.dev/samples#sidenav-1-2" role="button" aria-expanded="true" aria-controls="sidenav-1-2">Codelabs
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-1-2">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs">List of Dart codelabs</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/dart-cheatsheet">Language cheatsheet</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/iterables">Iterable collections</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/async-await">Asynchronous programming</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/null-safety">Null safety</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials">Tutorials</a>
+  </li>
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/samples#sidenav-2" role="button" aria-expanded="false" aria-controls="sidenav-2">Language</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/language-tour">Tour</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/type-system">Type system</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-3" href="https://dart.dev/samples#sidenav-2-3" role="button" aria-expanded="false" aria-controls="sidenav-2-3">Effective Dart
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-3">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/style">Style</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/documentation">Documentation</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/usage">Usage</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/effective-dart/design">Design</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-4" href="https://dart.dev/samples#sidenav-2-4" role="button" aria-expanded="false" aria-controls="sidenav-2-4">Coming from ...
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-4">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/coming-from/js-to-dart">JavaScript to Dart</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/extension-methods">Extension methods</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/concurrency">Concurrency</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/numbers">Numbers</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-2-8" href="https://dart.dev/samples#sidenav-2-8" role="button" aria-expanded="false" aria-controls="sidenav-2-8">Null safety
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-2-8">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/null-safety">Overview: Sound null safety</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/null-safety/migration-guide">Migrating to null safety</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/null-safety/understanding-null-safety">Understanding null safety</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/null-safety/unsound-null-safety">Unsound null safety</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/null-safety/faq">FAQ</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/evolution">Evolution</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/spec">Specification</a>
+  </li>
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/samples#sidenav-3" role="button" aria-expanded="false" aria-controls="sidenav-3">Core libraries</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-3">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/library-tour">Tour</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-3-3" href="https://dart.dev/samples#sidenav-3-3" role="button" aria-expanded="false" aria-controls="sidenav-3-3">Articles
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-3-3">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/articles/libraries/dart-io">Intro to dart:io</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/articles/libraries/creating-streams">Creating streams</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/samples#sidenav-4" role="button" aria-expanded="false" aria-controls="sidenav-4">Packages</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-4">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/packages">How to use packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/useful-libraries">Commonly used packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/create-library-packages">Creating packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/publishing">Publishing packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/writing-package-pages">Writing package pages</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-4-6" href="https://dart.dev/samples#sidenav-4-6" role="button" aria-expanded="false" aria-controls="sidenav-4-6">Package reference
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-4-6">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/dependencies">Dependencies</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/glossary">Glossary</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/package-layout">Package layout conventions</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/environment-variables">Pub environment variables</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/pubspec">Pubspec file</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/troubleshoot">Troubleshooting pub</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/verified-publishers">Verified publishers</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/versioning">Versioning</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/samples#sidenav-5" role="button" aria-expanded="false" aria-controls="sidenav-5">Development</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/codelabs/async-await">Futures, async, await</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/language/streams">Streams</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/json">JSON</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-4" href="https://dart.dev/samples#sidenav-5-4" role="button" aria-expanded="false" aria-controls="sidenav-5-4">Interoperability
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-4">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/c-interop">C interop</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/objective-c-interop">Objective-C and Swift interop</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/js-interop">JavaScript interop</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/google-apis">Google APIs</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/multiplatform-apps">Multi-platform apps</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-7" href="https://dart.dev/samples#sidenav-5-7" role="button" aria-expanded="false" aria-controls="sidenav-5-7">Command-line &amp; server apps
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-7">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/server">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/server/get-started">Get started</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/server/cmdline">Write command-line apps</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/server/httpserver">Write HTTP servers</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/server/libraries">Libraries and packages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/server/google-cloud">Google Cloud</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-8" href="https://dart.dev/samples#sidenav-5-8" role="button" aria-expanded="false" aria-controls="sidenav-5-8">Web apps
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-8">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/get-started">Get started</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/fetch-data">Fetch data dynamically</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-5-8-4" href="https://dart.dev/samples#sidenav-5-8-4" role="button" aria-expanded="false" aria-controls="sidenav-5-8-4">Low-level web programming
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-5-8-4">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/low-level-html/connect-dart-html">Connect Dart &amp; HTML</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/low-level-html/add-elements">Add elements to the DOM</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tutorials/web/low-level-html/remove-elements">Remove DOM elements</a>
+  </li>
+  </ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/deployment">Deployment</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/libraries">Libraries and packages</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/samples#sidenav-6" role="button" aria-expanded="false" aria-controls="sidenav-6">Tools &amp; techniques</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-2" href="https://dart.dev/samples#sidenav-6-2" role="button" aria-expanded="false" aria-controls="sidenav-6-2">Editors &amp; debuggers
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-2">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/jetbrains-plugin">IntelliJ &amp; Android Studio</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/vs-code">VS Code</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-devtools">Dart DevTools</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartpad">DartPad</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-3" href="https://dart.dev/samples#sidenav-6-3" role="button" aria-expanded="false" aria-controls="sidenav-6-3">Command-line tools
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-3">
+      <li class="nav-item">
+    <a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-6-3-1" href="https://dart.dev/samples#sidenav-6-3-1" role="button" aria-expanded="true" aria-controls="sidenav-6-3-1">Dart SDK
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-6-3-1">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/sdk">Overview</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-tool">dart</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-analyze">dart analyze</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-compile">dart compile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-create">dart create</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-doc">dart doc</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-fix">dart fix</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-format">dart format</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/pub/cmd">dart pub</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-run">dart run</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dart-test">dart test</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/dartaotruntime">dartaotruntime</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/experiment-flags">Experiment flags</a>
+  </li>
+  </ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable" data-toggle="collapse" data-target="#sidenav-6-3-2" href="https://dart.dev/samples#sidenav-6-3-2" role="button" aria-expanded="true" aria-controls="sidenav-6-3-2">Other command-line tools
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-6-3-2">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/build_runner">build_runner</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/webdev">webdev</a>
+  </li>
+  </ul>
+  </li>
+</ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-4" href="https://dart.dev/samples#sidenav-6-4" role="button" aria-expanded="false" aria-controls="sidenav-6-4">Managing source code
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-4">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/formatting">Formatting code</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/libraries/private-files">What not to commit</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-5" href="https://dart.dev/samples#sidenav-6-5" role="button" aria-expanded="false" aria-controls="sidenav-6-5">Static analysis
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-5">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/analysis-options">Customizing static analysis</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/language/sound-problems">Fixing common type problems</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/diagnostic-messages">Diagnostic messages</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/tools/linter-rules">Linter rules</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-6-6" href="https://dart.dev/samples#sidenav-6-6" role="button" aria-expanded="false" aria-controls="sidenav-6-6">Testing &amp; optimization
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-6-6">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/guides/testing">Testing</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/web/debugging">Debugging web apps</a>
+  </li></ul>
+  </li>
+
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link collapsed" data-toggle="collapse" href="https://dart.dev/samples#sidenav-7" role="button" aria-expanded="false" aria-controls="sidenav-7">Resources</a>
+
+      <ul class="nav flex-column flex-nowrap collapse " id="sidenav-7">
+        <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/resources">Overview</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/resources/books">Books</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/resources/dartpad-best-practices">DartPad in tutorials: Best practices</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/code-of-conduct">Code of conduct</a>
+  </li><li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/faq">FAQ</a>
+  </li><li class="nav-item">
+    <a class="nav-link collapsable collapsed" data-toggle="collapse" data-target="#sidenav-7-6" href="https://dart.dev/samples#sidenav-7-6" role="button" aria-expanded="false" aria-controls="sidenav-7-6">History
+    </a>
+    <ul class="nav flex-column flex-nowrap collapse " id="sidenav-7-6">
+      <li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/dart-2">Migrating to Dart&nbsp;2</a>
+  </li></ul>
+  </li>
+<li class="nav-item">
+    <a class="nav-link" href="https://dart.dev/resources/videos">Videos</a>
+  </li>
+</ul>
+    </li><li class="nav-item">
+      <a class="nav-link " data-toggle="collapse" href="https://dart.dev/samples#sidenav-8" role="button" aria-expanded="true" aria-controls="sidenav-8">Related sites</a>
+
+      <ul class="nav flex-column flex-nowrap collapse show" id="sidenav-8">
+        <li class="nav-item">
+    <a class="nav-link external" href="https://api.dart.dev/" target="_blank" rel="noopener">API reference<span class="material-icons md-24">
+        open_in_new
+      </span></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://medium.com/dartlang" target="_blank" rel="noopener">Blog<span class="material-icons md-24">
+        open_in_new
+      </span></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://dartpad.dev/" target="_blank" rel="noopener">DartPad (online editor)<span class="material-icons md-24">
+        open_in_new
+      </span></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://flutter.dev/" target="_blank" rel="noopener">Flutter<span class="material-icons md-24">
+        open_in_new
+      </span></a>
+  </li><li class="nav-item">
+    <a class="nav-link external" href="https://pub.dev/" target="_blank" rel="noopener">Package site<span class="material-icons md-24">
+        open_in_new
+      </span></a>
+  </li>
+</ul>
+    </li></ul>
+
+  </div>
+</div>
+
+    <main id="page-content">
+      
+
+
+
+
+
+
+
+<div id="site-toc--side" class="site-toc " style="top: 122px; max-height: 557px;">
+  <header class="site-toc__title">
+    Contents
+    <button type="button" class="btn site-toc--button__page-top" aria-label="Page top"></button>
+    
+  </header>
+  <ul id="toc" class="section-nav">
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#hello-world">Hello World</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#variables">Variables</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#control-flow-statements">Control flow statements</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#functions">Functions</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#comments">Comments</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#imports">Imports</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#classes">Classes</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#enums">Enums</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#inheritance">Inheritance</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#mixins">Mixins</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#interfaces-and-abstract-classes">Interfaces and abstract classes</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#async">Async</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#exceptions">Exceptions</a></li>
+<li class="toc-entry nav-item toc-h2"><a class="nav-link" href="https://dart.dev/samples#other-topics">Other topics</a></li>
+</ul>
+</div>
+
+
+      <article>
+        <div class="content">
+          
+
+          <div>
+            <div id="page-github-links" class="btn-group" aria-label="Page GitHub links" role="group">
+  <a href="https://github.com/dart-lang/site-www/tree/main/src/samples/index.md" class="btn no-automatic-external" title="View page source" target="_blank" rel="noopener">
+    <i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-file-alt fa-w-12 fa-sm" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg></i>
+  </a>
+  <a href="https://github.com/dart-lang/site-www/issues/new?template=1_page_issue.yml&amp;title=[PAGE%20ISSUE]:%20%27Language%20samples%27&amp;page-url=https://dart.dev/samples/&amp;page-source=https://github.com/dart-lang/site-www/tree/main/src/samples/index.md" class="btn no-automatic-external" title="Report an issue with this page" target="_blank" rel="noopener">
+    <i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-bug fa-w-16 fa-sm" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bug" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"></path></svg></i>
+  </a>
+</div>
+
+            <h1>Language samples</h1>
+          </div>
+          
+
+
+
+
+
+
+
+<div id="site-toc--inline" class="site-toc toc-collapsible toc-collapsed">
+  <header class="site-toc__title">
+    Contents
+    <button type="button" class="btn site-toc--button__page-top" aria-label="Page top"></button>
+    
+      <span class="site-toc--inline__toggle toc-toggle-down"><i class="material-icons">keyboard_arrow_down</i></span>
+      <span class="site-toc--inline__toggle toc-toggle-up"><i class="material-icons">keyboard_arrow_up</i></span>
+    
+  </header>
+  <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#hello-world">Hello World</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#variables">Variables</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#control-flow-statements">Control flow statements</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#functions">Functions</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#comments">Comments</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#imports">Imports</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#classes">Classes</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#enums">Enums</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#inheritance">Inheritance</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#mixins">Mixins</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#interfaces-and-abstract-classes">Interfaces and abstract classes</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#async">Async</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#exceptions">Exceptions</a></li>
+<li class="toc-entry toc-h2"><a href="https://dart.dev/samples#other-topics">Other topics</a></li>
+</ul>
+</div>
+
+
+          <p>This collection is not exhaustive—it’s just a brief
+introduction to the language for people who like to learn by example.
+You might also want to check out the language and library tours,
+or the <a href="https://dart.dev/codelabs/dart-cheatsheet">Dart cheatsheet codelab</a>.</p>
+
+<div class="card-grid no_toc_section">
+  <div class="card">
+    <h3><a href="https://dart.dev/guides/language/language-tour">Language tour</a></h3>
+    <p>
+      A comprehensive tour, with examples, of the Dart language.
+      Most of the <em>read more</em> links in this page
+      point to the language tour.
+    </p>
+  </div>
+  <div class="card">
+    <h3><a href="https://dart.dev/guides/libraries/library-tour">Library tour</a></h3>
+    <p>
+      An example-based introduction to the Dart core libraries.
+      See how to use the built-in types, collections,
+      dates and times, streams, and more.
+    </p>
+  </div>
+</div>
+
+<h2 id="hello-world">
+<a class="anchor" href="https://dart.dev/samples#hello-world" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hello World</h2>
+
+<p>Every app has a <code class="language-plaintext highlighter-rouge">main()</code> function.
+To display text on the console, you can use the top-level <code class="language-plaintext highlighter-rouge">print()</code> function:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="typ">void</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  print</span><span class="pun">(</span><span class="str">'Hello, World!'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<h2 id="variables">
+<a class="anchor" href="https://dart.dev/samples#variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables</h2>
+
+<p>Even in type-safe Dart code, most variables don’t need explicit types,
+thanks to type inference:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">var</span><span class="pln"> name </span><span class="pun">=</span><span class="pln"> </span><span class="str">'Voyager I'</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> year </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1977</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> antennaDiameter </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3.7</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> flybyObjects </span><span class="pun">=</span><span class="pln"> </span><span class="pun">[</span><span class="str">'Jupiter'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Saturn'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Uranus'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Neptune'</span><span class="pun">];</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> image </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="str">'tags'</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="str">'saturn'</span><span class="pun">],</span><span class="pln">
+  </span><span class="str">'url'</span><span class="pun">:</span><span class="pln"> </span><span class="str">'//path/to/saturn.jpg'</span><span class="pln">
+</span><span class="pun">};</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#variables">Read more</a> about variables in Dart, 
+including default values, the <code class="language-plaintext highlighter-rouge">final</code> and <code class="language-plaintext highlighter-rouge">const</code> keywords, and static types.</p>
+
+<h2 id="control-flow-statements">
+<a class="anchor" href="https://dart.dev/samples#control-flow-statements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Control flow statements</h2>
+
+<p>Dart supports the usual control flow statements:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">year </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">2001</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  print</span><span class="pun">(</span><span class="str">'21st century'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">year </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">1901</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  print</span><span class="pun">(</span><span class="str">'20th century'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">final</span><span class="pln"> </span><span class="typ">object</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> flybyObjects</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  print</span><span class="pun">(</span><span class="typ">object</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="typ">int</span><span class="pln"> month </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> month </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">12</span><span class="pun">;</span><span class="pln"> month</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  print</span><span class="pun">(</span><span class="pln">month</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln">year </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">2016</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  year </span><span class="pun">+=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#control-flow-statements">Read more</a> 
+about control flow statements in Dart,
+including <code class="language-plaintext highlighter-rouge">break</code> and <code class="language-plaintext highlighter-rouge">continue</code>, <code class="language-plaintext highlighter-rouge">switch</code> and <code class="language-plaintext highlighter-rouge">case</code>, and <code class="language-plaintext highlighter-rouge">assert</code>.</p>
+
+<h2 id="functions">
+<a class="anchor" href="https://dart.dev/samples#functions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions</h2>
+
+<p><a href="https://dart.dev/guides/language/effective-dart/design#types">We recommend</a>
+specifying the types of each function’s arguments and return value:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="typ">int</span><span class="pln"> fibonacci</span><span class="pun">(</span><span class="typ">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">return</span><span class="pln"> fibonacci</span><span class="pun">(</span><span class="pln">n </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> fibonacci</span><span class="pun">(</span><span class="pln">n </span><span class="pun">-</span><span class="pln"> </span><span class="lit">2</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">var</span><span class="pln"> result </span><span class="pun">=</span><span class="pln"> fibonacci</span><span class="pun">(</span><span class="lit">20</span><span class="pun">);</span></code></pre></div>
+</div>
+
+<p>A shorthand <code class="language-plaintext highlighter-rouge">=&gt;</code> (<em>arrow</em>) syntax is handy for functions that
+contain a single statement.
+This syntax is especially useful when passing anonymous functions as arguments:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="pln">flybyObjects</span><span class="pun">.</span><span class="pln">where</span><span class="pun">((</span><span class="pln">name</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> name</span><span class="pun">.</span><span class="pln">contains</span><span class="pun">(</span><span class="str">'turn'</span><span class="pun">)).</span><span class="pln">forEach</span><span class="pun">(</span><span class="pln">print</span><span class="pun">);</span></code></pre></div>
+</div>
+
+<p>Besides showing an anonymous function (the argument to <code class="language-plaintext highlighter-rouge">where()</code>),
+this code shows that you can use a function as an argument:
+the top-level <code class="language-plaintext highlighter-rouge">print()</code> function is an argument to <code class="language-plaintext highlighter-rouge">forEach()</code>.</p>
+
+<p><a href="https://dart.dev/guides/language/language-tour#functions">Read more</a> about functions in Dart,
+including optional parameters, default parameter values, and lexical scope.</p>
+
+<h2 id="comments">
+<a class="anchor" href="https://dart.dev/samples#comments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comments</h2>
+
+<p>Dart comments usually start with <code class="language-plaintext highlighter-rouge">//</code>.</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// This is a normal, one-line comment.</span>
+
+<span class="c1">/// This is a documentation comment, used to document libraries,</span>
+<span class="c1">/// classes, and their members. Tools like IDEs and dartdoc treat</span>
+<span class="c1">/// doc comments specially.</span>
+
+<span class="cm">/* Comments like these are also supported. */</span>
+</code></pre></div></div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#comments">Read more</a> about comments in Dart,
+including how the documentation tooling works.</p>
+
+<h2 id="imports">
+<a class="anchor" href="https://dart.dev/samples#imports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imports</h2>
+
+<p>To access APIs defined in other libraries, use <code class="language-plaintext highlighter-rouge">import</code>.</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class=" prettyprint lang-dart prettyprinted" style=""><span class="com">// Importing core libraries</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> </span><span class="str">'dart:math'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="com">// Importing libraries from external packages</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> </span><span class="str">'package:test/test.dart'</span><span class="pun">;</span><span class="pln">
+
+</span><span class="com">// Importing files</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> </span><span class="str">'path/to/my_other_file.dart'</span><span class="pun">;</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#libraries-and-visibility">Read more</a> 
+about libraries and visibility in Dart,
+including library prefixes, <code class="language-plaintext highlighter-rouge">show</code> and <code class="language-plaintext highlighter-rouge">hide</code>, 
+and lazy loading through the <code class="language-plaintext highlighter-rouge">deferred</code> keyword.</p>
+
+<h2 id="classes">
+<a class="anchor" href="https://dart.dev/samples#classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classes</h2>
+
+<p>Here’s an example of a class with three properties, two constructors,
+and a method. One of the properties can’t be set directly, so it’s
+defined using a getter method (instead of a variable).</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Spacecraft</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+  </span><span class="typ">DateTime</span><span class="pun">?</span><span class="pln"> launchDate</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="com">// Read-only non-final property</span><span class="pln">
+  </span><span class="typ">int</span><span class="pun">?</span><span class="pln"> </span><span class="kwd">get</span><span class="pln"> launchYear </span><span class="pun">=&gt;</span><span class="pln"> launchDate</span><span class="pun">?.</span><span class="pln">year</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="com">// Constructor, with syntactic sugar for assignment to members.</span><span class="pln">
+  </span><span class="typ">Spacecraft</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">name</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">launchDate</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// Initialization code goes here.</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+
+  </span><span class="com">// Named constructor that forwards to the default one.</span><span class="pln">
+  </span><span class="typ">Spacecraft</span><span class="pun">.</span><span class="pln">unlaunched</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> name</span><span class="pun">)</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">(</span><span class="pln">name</span><span class="pun">,</span><span class="pln"> </span><span class="typ">null</span><span class="pun">);</span><span class="pln">
+
+  </span><span class="com">// Method.</span><span class="pln">
+  </span><span class="typ">void</span><span class="pln"> describe</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    print</span><span class="pun">(</span><span class="str">'Spacecraft: $name'</span><span class="pun">);</span><span class="pln">
+    </span><span class="com">// Type promotion doesn't work on getters.</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> launchDate </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">launchDate</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">launchDate </span><span class="pun">!=</span><span class="pln"> </span><span class="typ">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="typ">int</span><span class="pln"> years </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DateTime</span><span class="pun">.</span><span class="pln">now</span><span class="pun">().</span><span class="pln">difference</span><span class="pun">(</span><span class="pln">launchDate</span><span class="pun">).</span><span class="pln">inDays </span><span class="pun">~/</span><span class="pln"> </span><span class="lit">365</span><span class="pun">;</span><span class="pln">
+      print</span><span class="pun">(</span><span class="str">'Launched: $launchYear ($years years ago)'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      print</span><span class="pun">(</span><span class="str">'Unlaunched'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>You might use the <code class="language-plaintext highlighter-rouge">Spacecraft</code> class like this:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">var</span><span class="pln"> voyager </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Spacecraft</span><span class="pun">(</span><span class="str">'Voyager I'</span><span class="pun">,</span><span class="pln"> </span><span class="typ">DateTime</span><span class="pun">(</span><span class="lit">1977</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">));</span><span class="pln">
+voyager</span><span class="pun">.</span><span class="pln">describe</span><span class="pun">();</span><span class="pln">
+
+</span><span class="kwd">var</span><span class="pln"> voyager3 </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Spacecraft</span><span class="pun">.</span><span class="pln">unlaunched</span><span class="pun">(</span><span class="str">'Voyager III'</span><span class="pun">);</span><span class="pln">
+voyager3</span><span class="pun">.</span><span class="pln">describe</span><span class="pun">();</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#classes">Read more</a> about classes in Dart,
+including initializer lists, optional <code class="language-plaintext highlighter-rouge">new</code> and <code class="language-plaintext highlighter-rouge">const</code>, redirecting constructors,
+<code class="language-plaintext highlighter-rouge">factory</code> constructors, getters, setters, and much more.</p>
+
+<h2 id="enums">
+<a class="anchor" href="https://dart.dev/samples#enums" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enums</h2>
+
+<p>Enums are a way of enumerating a predefined set of values or instances
+in a way which ensures that there cannot be any other instances of that type.</p>
+
+<p>Here is an example of a simple <code class="language-plaintext highlighter-rouge">enum</code> that defines
+a simple list of predefined planet types:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">enum</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> terrestrial</span><span class="pun">,</span><span class="pln"> gas</span><span class="pun">,</span><span class="pln"> ice </span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>Here is an example of an enhanced enum declaration
+of a class describing planets,
+with a defined set of constant instances,
+namely the planets of our own solar system.</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="com">/// Enum that enumerates the different planets in our solar system</span><span class="pln">
+</span><span class="com">/// and some of their properties.</span><span class="pln">
+</span><span class="kwd">enum</span><span class="pln"> </span><span class="typ">Planet</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  mercury</span><span class="pun">(</span><span class="pln">planetType</span><span class="pun">:</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pun">.</span><span class="pln">terrestrial</span><span class="pun">,</span><span class="pln"> moons</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> hasRings</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">),</span><span class="pln">
+  venus</span><span class="pun">(</span><span class="pln">planetType</span><span class="pun">:</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pun">.</span><span class="pln">terrestrial</span><span class="pun">,</span><span class="pln"> moons</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> hasRings</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">),</span><span class="pln">
+  </span><span class="com">// ···</span><span class="pln">
+  uranus</span><span class="pun">(</span><span class="pln">planetType</span><span class="pun">:</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pun">.</span><span class="pln">ice</span><span class="pun">,</span><span class="pln"> moons</span><span class="pun">:</span><span class="pln"> </span><span class="lit">27</span><span class="pun">,</span><span class="pln"> hasRings</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">),</span><span class="pln">
+  neptune</span><span class="pun">(</span><span class="pln">planetType</span><span class="pun">:</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pun">.</span><span class="pln">ice</span><span class="pun">,</span><span class="pln"> moons</span><span class="pun">:</span><span class="pln"> </span><span class="lit">14</span><span class="pun">,</span><span class="pln"> hasRings</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+
+  </span><span class="com">/// A constant generating constructor</span><span class="pln">
+  </span><span class="kwd">const</span><span class="pln"> </span><span class="typ">Planet</span><span class="pun">(</span><span class="pln">
+      </span><span class="pun">{</span><span class="kwd">required</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">planetType</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">required</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">moons</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">required</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">hasRings</span><span class="pun">});</span><span class="pln">
+
+  </span><span class="com">/// All instance variables are final</span><span class="pln">
+  </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pln"> planetType</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">int</span><span class="pln"> moons</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">bool</span><span class="pln"> hasRings</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="com">/// Enhanced enums support getters and other methods</span><span class="pln">
+  </span><span class="typ">bool</span><span class="pln"> </span><span class="kwd">get</span><span class="pln"> isGiant </span><span class="pun">=&gt;</span><span class="pln">
+      planetType </span><span class="pun">==</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pun">.</span><span class="pln">gas </span><span class="pun">||</span><span class="pln"> planetType </span><span class="pun">==</span><span class="pln"> </span><span class="typ">PlanetType</span><span class="pun">.</span><span class="pln">ice</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>You might use the <code class="language-plaintext highlighter-rouge">Planet</code> enum like this:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">final</span><span class="pln"> yourPlanet </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Planet</span><span class="pun">.</span><span class="pln">earth</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">yourPlanet</span><span class="pun">.</span><span class="pln">isGiant</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  print</span><span class="pun">(</span><span class="str">'Your planet is not a "giant planet".'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#enums">Read more</a> about enums in Dart,
+including enhanced enum requirements, automatically introduced properties,
+accessing enumerated value names, switch statement support, and much more.</p>
+
+<h2 id="inheritance">
+<a class="anchor" href="https://dart.dev/samples#inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inheritance</h2>
+
+<p>Dart has single inheritance.</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Orbiter</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Spacecraft</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="typ">double</span><span class="pln"> altitude</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="typ">Orbiter</span><span class="pun">(</span><span class="kwd">super</span><span class="pun">.</span><span class="pln">name</span><span class="pun">,</span><span class="pln"> </span><span class="typ">DateTime</span><span class="pln"> </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">launchDate</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">altitude</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#extending-a-class">Read more</a> 
+about extending classes, the optional <code class="language-plaintext highlighter-rouge">@override</code> annotation, and more.</p>
+
+<h2 id="mixins">
+<a class="anchor" href="https://dart.dev/samples#mixins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mixins</h2>
+
+<p>Mixins are a way of reusing code in multiple class hierarchies. The following is
+a mixin declaration:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">mixin</span><span class="pln"> </span><span class="typ">Piloted</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="typ">int</span><span class="pln"> astronauts </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="typ">void</span><span class="pln"> describeCrew</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    print</span><span class="pun">(</span><span class="str">'Number of astronauts: $astronauts'</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>To add a mixin’s capabilities to a class, just extend the class with the mixin.</p>
+<pre class="prettyprint lang-dart prettyprinted" style=""><code><span class="kwd">class</span><span class="pln"> </span><span class="typ">PilotedCraft</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Spacecraft</span><span class="pln"> </span><span class="highlight"><span class="kwd">with</span></span><span class="pln"> </span><span class="typ">Piloted</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="com">// ···</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p><code class="language-plaintext highlighter-rouge">PilotedCraft</code> now has the <code class="language-plaintext highlighter-rouge">astronauts</code> field as well as the <code class="language-plaintext highlighter-rouge">describeCrew()</code> method.</p>
+
+<p><a href="https://dart.dev/guides/language/language-tour#adding-features-to-a-class-mixins">Read more</a> about mixins.</p>
+
+<h2 id="interfaces-and-abstract-classes">
+<a class="anchor" href="https://dart.dev/samples#interfaces-and-abstract-classes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Interfaces and abstract classes</h2>
+
+<p>Dart has no <code class="language-plaintext highlighter-rouge">interface</code> keyword. 
+Instead, all classes implicitly define an interface. 
+Therefore, you can implement any class.</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">MockSpaceship</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">Spacecraft</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="com">// ···</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#implicit-interfaces">Read more</a> about implicit interfaces.</p>
+
+<p>You can create an abstract class
+to be extended (or implemented) by a concrete class. 
+Abstract classes can contain abstract methods (with empty bodies).</p>
+<pre class="prettyprint lang-dart prettyprinted" style=""><code><span class="highlight"><span class="kwd">abstract</span></span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Describable</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="typ">void</span><span class="pln"> describe</span><span class="pun">();</span><span class="pln">
+
+  </span><span class="typ">void</span><span class="pln"> describeWithEmphasis</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    print</span><span class="pun">(</span><span class="str">'========='</span><span class="pun">);</span><span class="pln">
+    describe</span><span class="pun">();</span><span class="pln">
+    print</span><span class="pun">(</span><span class="str">'========='</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>Any class extending <code class="language-plaintext highlighter-rouge">Describable</code> has the <code class="language-plaintext highlighter-rouge">describeWithEmphasis()</code> method, 
+which calls the extender’s implementation of <code class="language-plaintext highlighter-rouge">describe()</code>.</p>
+
+<p><a href="https://dart.dev/guides/language/language-tour#abstract-classes">Read more</a> 
+about abstract classes and methods.</p>
+
+<h2 id="async">
+<a class="anchor" href="https://dart.dev/samples#async" aria-hidden="true"><span class="octicon octicon-link"></span></a>Async</h2>
+
+<p>Avoid callback hell and make your code much more readable by
+using <code class="language-plaintext highlighter-rouge">async</code> and <code class="language-plaintext highlighter-rouge">await</code>.</p>
+<pre class="prettyprint lang-dart prettyprinted" style=""><code><span class="kwd">const</span><span class="pln"> oneSecond </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Duration</span><span class="pun">(</span><span class="pln">seconds</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+</span><span class="com">// ···</span><span class="pln">
+</span><span class="typ">Future</span><span class="pun">&lt;</span><span class="typ">void</span><span class="pun">&gt;</span><span class="pln"> printWithDelay</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> message</span><span class="pun">)</span><span class="pln"> </span><span class="highlight"><span class="kwd">async</span></span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">await</span><span class="pln"> </span><span class="typ">Future</span><span class="pun">.</span><span class="pln">delayed</span><span class="pun">(</span><span class="pln">oneSecond</span><span class="pun">);</span><span class="pln">
+  print</span><span class="pun">(</span><span class="pln">message</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>The method above is equivalent to:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="typ">Future</span><span class="pun">&lt;</span><span class="typ">void</span><span class="pun">&gt;</span><span class="pln"> printWithDelay</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> message</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">return</span><span class="pln"> </span><span class="typ">Future</span><span class="pun">.</span><span class="pln">delayed</span><span class="pun">(</span><span class="pln">oneSecond</span><span class="pun">).</span><span class="pln">then</span><span class="pun">((</span><span class="pln">_</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    print</span><span class="pun">(</span><span class="pln">message</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">});</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>As the next example shows, <code class="language-plaintext highlighter-rouge">async</code> and <code class="language-plaintext highlighter-rouge">await</code> help make asynchronous code
+easy to read.</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="typ">Future</span><span class="pun">&lt;</span><span class="typ">void</span><span class="pun">&gt;</span><span class="pln"> createDescriptions</span><span class="pun">(</span><span class="typ">Iterable</span><span class="pun">&lt;</span><span class="typ">String</span><span class="pun">&gt;</span><span class="pln"> objects</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">async</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">final</span><span class="pln"> </span><span class="typ">object</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> objects</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">var</span><span class="pln"> file </span><span class="pun">=</span><span class="pln"> </span><span class="typ">File</span><span class="pun">(</span><span class="str">'$object.txt'</span><span class="pun">);</span><span class="pln">
+      </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">await</span><span class="pln"> file</span><span class="pun">.</span><span class="pln">exists</span><span class="pun">())</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">var</span><span class="pln"> modified </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">await</span><span class="pln"> file</span><span class="pun">.</span><span class="pln">lastModified</span><span class="pun">();</span><span class="pln">
+        print</span><span class="pun">(</span><span class="pln">
+            </span><span class="str">'File for $object already exists. It was modified on $modified.'</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">continue</span><span class="pun">;</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+      </span><span class="kwd">await</span><span class="pln"> file</span><span class="pun">.</span><span class="pln">create</span><span class="pun">();</span><span class="pln">
+      </span><span class="kwd">await</span><span class="pln"> file</span><span class="pun">.</span><span class="pln">writeAsString</span><span class="pun">(</span><span class="str">'Start describing $object in this file.'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">on</span><span class="pln"> </span><span class="typ">IOException</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      print</span><span class="pun">(</span><span class="str">'Cannot create description for $object: $e'</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>You can also use <code class="language-plaintext highlighter-rouge">async*</code>, which gives you a nice, readable way to build streams.</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="typ">Stream</span><span class="pun">&lt;</span><span class="typ">String</span><span class="pun">&gt;</span><span class="pln"> report</span><span class="pun">(</span><span class="typ">Spacecraft</span><span class="pln"> craft</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Iterable</span><span class="pun">&lt;</span><span class="typ">String</span><span class="pun">&gt;</span><span class="pln"> objects</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">async</span><span class="pun">*</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">final</span><span class="pln"> </span><span class="typ">object</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> objects</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">await</span><span class="pln"> </span><span class="typ">Future</span><span class="pun">.</span><span class="pln">delayed</span><span class="pun">(</span><span class="pln">oneSecond</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">yield</span><span class="pln"> </span><span class="str">'${craft.name} flies by $object'</span><span class="pun">;</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p><a href="https://dart.dev/guides/language/language-tour#asynchrony-support">Read more</a> about
+asynchrony support, including <code class="language-plaintext highlighter-rouge">async</code> functions, <code class="language-plaintext highlighter-rouge">Future</code>, <code class="language-plaintext highlighter-rouge">Stream</code>,
+and the asynchronous loop (<code class="language-plaintext highlighter-rouge">await for</code>).</p>
+
+<h2 id="exceptions">
+<a class="anchor" href="https://dart.dev/samples#exceptions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exceptions</h2>
+
+<p>To raise an exception, use <code class="language-plaintext highlighter-rouge">throw</code>:</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">astronauts </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">throw</span><span class="pln"> </span><span class="typ">StateError</span><span class="pun">(</span><span class="str">'No astronauts.'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>To catch an exception, use a <code class="language-plaintext highlighter-rouge">try</code> statement with <code class="language-plaintext highlighter-rouge">on</code> or <code class="language-plaintext highlighter-rouge">catch</code> (or both):</p>
+
+<div class="code-excerpt">
+<div class="code-excerpt__code"><pre><code class=" prettyprint lang-dart prettyprinted" style=""><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">final</span><span class="pln"> </span><span class="typ">object</span><span class="pln"> </span><span class="kwd">in</span><span class="pln"> flybyObjects</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">var</span><span class="pln"> description </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">await</span><span class="pln"> </span><span class="typ">File</span><span class="pun">(</span><span class="str">'$object.txt'</span><span class="pun">).</span><span class="pln">readAsString</span><span class="pun">();</span><span class="pln">
+    print</span><span class="pun">(</span><span class="pln">description</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">on</span><span class="pln"> </span><span class="typ">IOException</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  print</span><span class="pun">(</span><span class="str">'Could not describe object: $e'</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  flybyObjects</span><span class="pun">.</span><span class="pln">clear</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre></div>
+</div>
+
+<p>Note that the code above is asynchronous;
+<code class="language-plaintext highlighter-rouge">try</code> works for both synchronous code and code in an <code class="language-plaintext highlighter-rouge">async</code> function.</p>
+
+<p><a href="https://dart.dev/guides/language/language-tour#exceptions">Read more</a> about exceptions, 
+including stack traces, <code class="language-plaintext highlighter-rouge">rethrow</code>, 
+and the difference between <code class="language-plaintext highlighter-rouge">Error</code> and <code class="language-plaintext highlighter-rouge">Exception</code>.</p>
+
+<h2 id="other-topics">
+<a class="anchor" href="https://dart.dev/samples#other-topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other topics</h2>
+
+<p>Many more code samples are in the
+<a href="https://dart.dev/guides/language/language-tour">language tour</a> and the
+<a href="https://dart.dev/guides/libraries/library-tour">library tour</a>.
+Also see the <a href="https://api.dart.dev/" class="external">Dart API reference,</a>
+which often contains examples.</p>
+
+          
+
+        </div>
+      </article>
+    </main>
+    <footer id="page-footer">
+  <div class="footer-section footer-main">
+    <a href="https://dart.dev/" class="brand" title="Dart">
+      <img src="./Language samples _ Dart_files/white.svg" alt="Dart" width="164px">
+    </a>
+    <div class="footer-social-links">
+      <a href="https://medium.com/dartlang" target="_blank" rel="noopener" title="Medium blog" class="no-automatic-external">
+        <svg>
+          <use href="/assets/img/social/medium.svg#medium"></use>
+        </svg>
+      </a>
+      <a href="https://github.com/dart-lang" target="_blank" rel="noopener" title="GitHub" class="no-automatic-external">
+        <svg>
+          <use href="/assets/img/social/github.svg#github"></use>
+        </svg>
+      </a>
+      <a href="https://twitter.com/dart_lang" target="_blank" rel="noopener" title="Twitter" class="no-automatic-external">
+        <svg>
+          <use href="/assets/img/social/twitter.svg#twitter"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-section footer-tray">
+    <div class="footer-licenses">
+      Except as otherwise noted, this site is licensed under a
+      <a href="https://creativecommons.org/licenses/by/4.0/" class="no-automatic-external">Creative Commons Attribution 4.0 International License</a>,
+      and code samples are licensed under the
+      <a href="https://opensource.org/licenses/BSD-3-Clause" class="no-automatic-external">3-Clause BSD License</a>.
+    </div>
+    <div class="footer-utility-links">
+      <ul>
+        <li><a href="https://dart.dev/terms" title="Terms of use">Terms</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" title="Privacy policy" class="no-automatic-external">Privacy</a></li>
+        <li><a href="https://dart.dev/security" title="Security philosophy and practices">Security</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+   
+  
+
+</body></html>
