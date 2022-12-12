@@ -2898,14 +2898,14 @@ specified by <code class="language-plaintext highlighter-rouge">T</code>. For ex
 you are sure that the object is of that type. Example:</p>
 
 <div class="code-excerpt">
-<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="pun">(</span><span class="pln">employee </span><span class="kwd">as</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">).</span><span class="pln">firstName </span><span class="pun">=</span><span class="pln"> </span><span class="str">'Bob'</span><span class="pun">;</span></code></pre></div>
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="pun">(</span><span class="pln">employee </span><span class="kwd">as</span><span class="pln"> </span><span class="typ">kotlin_lang.Person</span><span class="pun">).</span><span class="pln">firstName </span><span class="pun">=</span><span class="pln"> </span><span class="str">'Bob'</span><span class="pun">;</span></code></pre></div>
 </div>
 
 <p>If you aren’t sure that the object is of type <code class="language-plaintext highlighter-rouge">T</code>, then use <code class="language-plaintext highlighter-rouge">is T</code> to check the
 type before using the object.</p>
 
 <div class="code-excerpt">
-<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">employee </span><span class="kwd">is</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">employee </span><span class="kwd">is</span><span class="pln"> </span><span class="typ">kotlin_lang.Person</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
   </span><span class="com">// Type check</span><span class="pln">
   employee</span><span class="pun">.</span><span class="pln">firstName </span><span class="pun">=</span><span class="pln"> </span><span class="str">'Bob'</span><span class="pun">;</span><span class="pln">
 </span><span class="pun">}</span></code></pre></div>
@@ -2913,7 +2913,7 @@ type before using the object.</p>
 
 <aside class="alert alert-info" role="alert">
   <p><i class="" data-fa-i2svg=""><svg class="svg-inline--fa fa-info-circle fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg></i> <strong>Note:</strong>
-  The code isn’t equivalent. If <code class="language-plaintext highlighter-rouge">employee</code> is null or not a <code class="language-plaintext highlighter-rouge">Person</code>, the
+  The code isn’t equivalent. If <code class="language-plaintext highlighter-rouge">employee</code> is null or not a <code class="language-plaintext highlighter-rouge">kotlin_lang.Person</code>, the
   first example throws an exception; the second does nothing.</p>
 </aside>
 
@@ -4037,7 +4037,7 @@ superclass. Specify the superclass constructor after a colon (<code class="langu
 before the constructor body (if any).</p>
 
 <p>In the following example, the constructor for the Employee class calls the named
-constructor for its superclass, Person. Click <strong>Run</strong> to execute the code.</p>
+constructor for its superclass, kotlin_lang.Person. Click <strong>Run</strong> to execute the code.</p>
 
 <div class="code-excerpt">
 <div class="code-excerpt__code"><div><iframe src="./Language tour _ Dart_files/embed-dart(1).html" style="height: 450px;"></iframe></div></div>
@@ -4048,7 +4048,7 @@ invoking the constructor, an argument can be an expression such as a
 function call:</p>
 
 <div class="code-excerpt">
-<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Employee</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Person</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+<div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Employee</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">kotlin_lang.Person</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
   </span><span class="typ">Employee</span><span class="pun">()</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">fromJson</span><span class="pun">(</span><span class="pln">fetchDefaultData</span><span class="pun">());</span><span class="pln">
   </span><span class="com">// ···</span><span class="pln">
 </span><span class="pun">}</span></code></pre></div>
@@ -4456,28 +4456,28 @@ interfaces. For example:</p>
 
 <div class="code-excerpt">
 <div class="code-excerpt__code"><pre><code class="dart prettyprint lang-dart prettyprinted" style=""><span class="com">// A person. The implicit interface contains greet().</span><span class="pln">
-</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Person</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">kotlin_lang.Person</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
   </span><span class="com">// In the interface, but visible only in this library.</span><span class="pln">
   </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> _name</span><span class="pun">;</span><span class="pln">
 
   </span><span class="com">// Not in the interface, since this is a constructor.</span><span class="pln">
-  </span><span class="typ">Person</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">_name</span><span class="pun">);</span><span class="pln">
+  </span><span class="typ">kotlin_lang.Person</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">_name</span><span class="pun">);</span><span class="pln">
 
   </span><span class="com">// In the interface.</span><span class="pln">
   </span><span class="typ">String</span><span class="pln"> greet</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> who</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="str">'Hello, $who. I am $_name.'</span><span class="pun">;</span><span class="pln">
 </span><span class="pun">}</span><span class="pln">
 
-</span><span class="com">// An implementation of the Person interface.</span><span class="pln">
-</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Impostor</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">Person</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+</span><span class="com">// An implementation of the kotlin_lang.Person interface.</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Impostor</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">kotlin_lang.Person</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
   </span><span class="typ">String</span><span class="pln"> </span><span class="kwd">get</span><span class="pln"> _name </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="str">''</span><span class="pun">;</span><span class="pln">
 
   </span><span class="typ">String</span><span class="pln"> greet</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> who</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> </span><span class="str">'Hi $who. Do you know who I am?'</span><span class="pun">;</span><span class="pln">
 </span><span class="pun">}</span><span class="pln">
 
-</span><span class="typ">String</span><span class="pln"> greetBob</span><span class="pun">(</span><span class="typ">Person</span><span class="pln"> person</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> person</span><span class="pun">.</span><span class="pln">greet</span><span class="pun">(</span><span class="str">'Bob'</span><span class="pun">);</span><span class="pln">
+</span><span class="typ">String</span><span class="pln"> greetBob</span><span class="pun">(</span><span class="typ">kotlin_lang.Person</span><span class="pln"> person</span><span class="pun">)</span><span class="pln"> </span><span class="pun">=&gt;</span><span class="pln"> person</span><span class="pun">.</span><span class="pln">greet</span><span class="pun">(</span><span class="str">'Bob'</span><span class="pun">);</span><span class="pln">
 
 </span><span class="typ">void</span><span class="pln"> main</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
-  print</span><span class="pun">(</span><span class="pln">greetBob</span><span class="pun">(</span><span class="typ">Person</span><span class="pun">(</span><span class="str">'Kathy'</span><span class="pun">)));</span><span class="pln">
+  print</span><span class="pun">(</span><span class="pln">greetBob</span><span class="pun">(</span><span class="typ">kotlin_lang.Person</span><span class="pun">(</span><span class="str">'Kathy'</span><span class="pun">)));</span><span class="pln">
   print</span><span class="pun">(</span><span class="pln">greetBob</span><span class="pun">(</span><span class="typ">Impostor</span><span class="pun">()));</span><span class="pln">
 </span><span class="pun">}</span></code></pre></div>
 </div>
@@ -4789,7 +4789,7 @@ names. The following example shows two classes that use mixins:</p>
   </span><span class="com">// ···</span><span class="pln">
 </span><span class="pun">}</span><span class="pln">
 
-</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Maestro</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Person</span><span class="pln"> </span><span class="highlight"><span class="kwd">with</span><span class="pln"> </span><span class="typ">Musical</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Aggressive</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Demented</span></span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Maestro</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">kotlin_lang.Person</span><span class="pln"> </span><span class="highlight"><span class="kwd">with</span><span class="pln"> </span><span class="typ">Musical</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Aggressive</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Demented</span></span><span class="pln"> </span><span class="pun">{</span><span class="pln">
   </span><span class="typ">Maestro</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> maestroName</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
     name </span><span class="pun">=</span><span class="pln"> maestroName</span><span class="pun">;</span><span class="pln">
     canConduct </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
